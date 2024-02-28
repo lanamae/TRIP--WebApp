@@ -1,0 +1,134 @@
+@media (min-width: 1024px) {
+  .main {
+    width: 100%;
+    height: auto;
+
+    nav {
+      width: 100%;
+      height: 80px;
+      background-image: url("../img/nav-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 10px 80px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      position: relative;
+
+      .logo {
+        width: 100px;
+        height: auto;
+        margin: 20px 0px;
+      }
+
+      .navigation {
+        width: auto;
+        height: auto;
+        background: none;
+        position: static;
+        font-family: $sans-serif;
+        margin-left: 0px;
+        // top: 0px;
+        transition: none;
+        // top: 0px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .close {
+          display: none;
+        }
+        .navlinks {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 40px;
+          padding: 0px 0px;
+          margin-right: 80px;
+          margin-bottom: 0;
+
+          li {
+            padding: 0px;
+            cursor: pointer;
+
+            &:hover {
+              background: none;
+            }
+          }
+
+          a {
+            text-decoration: none;
+            color: $text-light;
+            font-size: 18px;
+            // transition: width 500ms ease-in 100ms;
+
+            &:hover {
+
+              &::after {
+                content: "";
+                display: block;
+                width: 100%; /* Adjust width as needed */
+                height: 2px; /* Adjust height as needed */
+                background-color: $accent-light; /* Change color as needed */
+                margin-top: 10px; /* Adjust spacing as needed */
+              }
+            }
+          }
+        }
+
+        .accounts {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 0px 0px;
+          gap: 30px;
+
+          .login-btn {
+            color: $text-dark;
+            color: $text-light;
+            font-weight: 700;
+          }
+
+          .signup-btn {
+            background: $accent-light;
+            padding: 12px 32px;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            color: $text-dark;
+          }
+        }
+      }
+
+      .navigation.show {
+        margin-left: 80px;
+      }
+
+      .menu-bar {
+        display: none;
+      }
+    }
+
+    .hero-section {
+      width: 100%;
+      height: 150vh;
+      background-image: url("../img/hero-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .about-section {
+      width: 100%;
+      height: 100vh;
+      background: $background-light;
+    }
+  }
+}
