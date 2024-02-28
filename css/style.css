@@ -337,4 +337,91 @@
     height: 100vh;
     background: #fbfbfe;
   }
+  .main .products-section {
+    width: 100%;
+    height: 100vh;
+    background: #fbfbfe;
+  }
+  .main .service-section {
+    width: 100%;
+    height: 100vh;
+    background: #fbfbfe;
+  }
+  .main .reviews-section {
+    width: 100%;
+    height: 100vh;
+    background: #fbfbfe;
+  }
+  .main footer {
+    width: 100%;
+    height: 350px;
+    background: #274502;
+    padding: 50px 80px;
+  }
+  .main footer .contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main footer .contents .ftr-content1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .main footer .contents .ftr-content1 .logo img {
+    width: 150px;
+    height: auto;
+  }
+  .main footer .contents .ftr-content1 .logo p {
+    font-family: "Kalnia", serif;
+    color: #fff;
+    font-size: 20px;
+  }
+  .main footer .contents .ftr-content1 .subscribe form {
+    display: flex;
+    gap: 10px;
+  }
+  .main footer .contents .ftr-content1 .subscribe form input {
+    order: 1;
+    width: 391px;
+    height: auto;
+    padding: 16px 54px 16px 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 5px;
+  }
+  .main footer .contents .ftr-content1 .subscribe form button {
+    order: 0;
+    width: auto;
+    height: auto;
+    padding: 12px 32px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 5px;
+  }
+  .main footer .contents .ftr-content2 {
+    display: flex;
+    gap: 100px;
+    margin-right: 50px;
+  }
+  .main footer .contents .ftr-content2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main footer .contents .ftr-content2 ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .main footer .copyright {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */
