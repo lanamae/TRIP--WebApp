@@ -238,6 +238,94 @@
   font-family: sans-serif;
   font-size: 16px;
 }
+.main .divider {
+  display: none;
+}
+.main .products-section {
+  width: 100%;
+  height: auto;
+  background-image: url("../img/products-bg.png");
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.main .products-section .products-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  gap: 15px;
+}
+.main .products-section .products-head h1 {
+  color: #274502;
+  font-family: "Kalnia", serif;
+  font-size: 32px;
+  text-align: center;
+}
+.main .products-section .products-head p {
+  color: #424242;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0px 0px;
+}
+.main .products-section .products-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+.main .products-section .products-cards .card {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .products-section .products-cards .card img {
+  width: 250px;
+  height: 250px;
+}
+.main .products-section .products-cards .card .product-name {
+  color: #424242;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.main .products-section .products-cards .card .rate {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  gap: 10px;
+}
+.main .products-section .products-cards .card .rate img {
+  height: 20px;
+  width: auto;
+}
+.main .products-section .products-cards .card .rate p {
+  color: red;
+  font-family: "Poppins", sans-serif;
+}
+.main .products-section .products-cards .card button {
+  display: block;
+  border: none;
+  border-radius: 8px;
+  background-color: #274502;
+  padding: 12px 32px;
+  box-shadow: 0 6px 6px rgba(39, 69, 2, 0.43);
+  margin-top: 10px;
+}
+.main .products-section .products-cards .card button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+}
 .main footer {
   width: 100%;
   height: auto;
@@ -567,6 +655,7 @@
     font-size: 16px;
   }
   .main .divider {
+    display: block;
     width: 100%;
     height: 200px;
     padding: 60px 0px;
@@ -607,6 +696,7 @@
   }
   .main .products-section .products-cards {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 48px;
