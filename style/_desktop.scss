@@ -69,7 +69,6 @@
             // transition: width 500ms ease-in 100ms;
 
             &:hover {
-
               &::after {
                 content: "";
                 display: block;
@@ -103,6 +102,7 @@
             border-radius: 8px;
             text-align: center;
             color: $text-dark;
+            box-shadow: 0 6px 6px rgba($accent-light, 0.43);
           }
         }
       }
@@ -118,11 +118,83 @@
 
     .hero-section {
       width: 100%;
-      height: 150vh;
+      height: 100vh;
       background-image: url("../img/hero-bg.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+
+      padding: 20px 80px;
+      display: flex;
+      justify-content: start;
+      align-items: start;
+
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+
+        padding-top: 60px;
+
+        h1 {
+          font-family: $serif;
+          color: #fff;
+          font-size: 56px;
+          margin-right: 400px;
+          font-weight: 500;
+        }
+
+        p {
+          font-family: $sans-serif;
+          font-weight: 300;
+          color: #fff;
+          font-size: 18px;
+          background: rgba(#353232, 0.5);
+          padding: 20px 35px;
+          margin-right: 650px;
+        }
+
+        .hero-btn {
+          display: flex;
+          gap: 30px;
+
+          .reservation-btn {
+            border: none;
+            border-radius: 8px;
+            background-color: $background-light;
+            padding: 12px 32px;
+            box-shadow: 0 6px 6px rgba(#ffffff, 0.43);
+
+            a{
+              text-decoration: none;
+              color: $accent-light;
+              font-family: sans-serif;
+              font-size: 16px;
+
+            }
+          }
+
+          .cta-btn {
+            border: none;
+            border-radius: 8px;
+            background-color: $accent-light;
+            padding: 12px 32px;
+            box-shadow: 0 6px 6px rgba($accent-light, 0.43);
+
+            a{
+              text-decoration: none;
+              color: #fff;
+              font-family: sans-serif;
+              font-size: 16px;
+
+            }
+          }
+
+          
+        }
+      }
     }
 
     .about-section {
