@@ -1,0 +1,23 @@
+// fonts
+$serif: "Kalnia", serif;
+$sans-serif: "Poppins", sans-serif;
+
+
+// colors
+$accent-light: #274502;;
+$secondary-light: #435c24;
+$primary-light: #88ab59;
+$background-light: #fbfbfe;
+$text-light:  #424242;
+
+
+$accent-dark: #dffdba;
+$secondary-dark: #c2dba3;
+$primary-dark: #82a654;
+$background-dark: #010104;
+$text-dark: #bdbdbd;
+
+
+
+@import 'mobile';
+@import 'desktop';
